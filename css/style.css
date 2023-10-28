@@ -1,0 +1,281 @@
+.jumbotron {
+    height: 630px;
+    background-image: url('../img/jumbotronporto.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    /* background: no-repeat; */
+    background-repeat: no-repeat;
+    background-position: 0 -130px;
+    color: #eaeaea;
+    overflow: hidden;
+}
+
+.jumbotron img {
+    width: 23%;
+    border: 5px solid #eaeaea;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron h1,
+.jumbotron p {
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+    width: 250px;
+    border-top: 3px solid #999;
+}
+
+.pKiri,
+.pKanan {
+    opacity: 0;
+    transform: translate(-50px, 0) rotate(15deg);
+    transition: 2s;
+}
+
+.pKanan {
+    transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.portfolio {
+    background-color: #eee;
+}
+
+.figure {
+    opacity: 0;
+    transform: translate(0, -40px);
+    transition: .5s;
+}
+
+.figure.muncul {
+    opacity: 1;
+    transform: translate(0, 0);
+}
+
+.figure h6,
+.figure h7 {
+    color: #171717;
+}
+
+.figure-img {
+    position: relative;
+}
+
+.figure-img a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.figure-img:hover a {
+    opacity: 1;
+}
+
+
+.figure-caption .deskription-porto{
+    margin-top: -15px;
+    color: #171717;
+}
+
+
+.store a {
+    text-decoration: none;
+}
+
+/* Breadcrumb */
+.breadcrumb {
+    margin-top: 10px;
+  }
+
+.portfolio-page .img-porto {
+    opacity: 1;
+  }
+  
+  .img-porto {
+    position: relative;
+  }
+  
+  .img-porto a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+  
+  .img-porto:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .portfolio-page .deskription-porto{
+    margin-top: -15px;
+    color: #171717;
+}
+
+.my-portfolio {
+  background-color: #eee;
+}
+
+.myporto-box {
+  position: relative;
+  background-color: #eee;
+  border-radius: 10px;
+  height: 400px;
+  transform-style: preserve-3d;
+}
+
+.myporto-box::before {
+  content: "MY";
+  position: absolute;
+  color: #fff;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 30px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box:hover::before {
+  
+  opacity: 1;
+}
+
+.myporto-box::after {
+  content: "PORTOFOLIO";
+  position: absolute;
+  color: #fff;
+  font-size: 3rem;
+  font-weight: bold;
+  font-style: italic;
+  top: 280px;
+  left: 100px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box:hover::after {
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 1;
+}
+
+.myporto-name {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  font-size: 2rem;
+  opacity: 0;
+  transform: translate3d(0, 0, 50px);
+  transition: 0.5s;
+}
+
+.myporto-box:hover .myporto-name {
+  top: 15px;
+  opacity: 1;
+}
+
+.myporto-button {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 100px);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.myporto-box:hover .myporto-button {
+  opacity: 1;
+  bottom: 15px;
+}
+
+.myporto-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 100px);
+  max-width: 300px;
+  transition: 0.5s;
+}
+
+.myporto-box:hover .myporto-img {
+  transform: translate3d(-50%, -50%, 100px) rotate(5deg) scale(1.2);
+}
+
+.deskription-porto{
+  font-size: 90%;
+  color: #6c757d;
+}
+
+.deskription2-porto{
+  margin-top: -15px;
+  font-size: 90%;
+  color: #171717;
+
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    background-color: #333;
+    padding-top: 30px;
+}
+
+footer p {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(1px, 1px) rotate(0deg);
+    }
+    10% {
+      transform: translate(-1px, -2px) rotate(-1deg);
+    }
+    20% {
+      transform: translate(-3px, 0px) rotate(1deg);
+    }
+    30% {
+      transform: translate(3px, 2px) rotate(0deg);
+    }
+    40% {
+      transform: translate(1px, -1px) rotate(1deg);
+    }
+    50% {
+      transform: translate(-1px, 2px) rotate(-1deg);
+    }
+    60% {
+      transform: translate(-3px, 1px) rotate(0deg);
+    }
+    70% {
+      transform: translate(3px, 1px) rotate(-1deg);
+    }
+    80% {
+      transform: translate(-1px, -1px) rotate(1deg);
+    }
+    90% {
+      transform: translate(1px, 2px) rotate(0deg);
+    }
+    100% {
+      transform: translate(1px, -2px) rotate(-1deg);
+    }
+  }
